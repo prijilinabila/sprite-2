@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#box{
+    position: relative;
+    margin: 0 auto;
+    top: 200px;
+    width: 51px;
+    height: 51px;
+    border: 1px solid black;
+    overflow: hidden;
+    
+
+}
+.images{
+    position: relative;
+    height: 51px;
+    width: 2448px;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-timing-function: steps(48);
+    animation-iteration-count: infinite;
+    transform: translateX(0);
+
+}
+#img1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#img2{
+    position: absolute;
+    left: 612px;
+    top:-51px;
+}
+#img3{
+    position: absolute;
+    left:1224px ;
+    top:-102px;
+}
+#img4{
+    position: absolute;
+    left: 1836px;
+    top: -153px;
+}
+@keyframes animate{
+    100%{
+        transform: translateX(-2448px);
+    }
+}
